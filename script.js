@@ -62,8 +62,9 @@ async function yourlocationdata(){
     windspeed.innerText=(data.wind.speed)+"m/s";
 
     cityinfo.innerText=(data.name  );
-    let ab=await fetch(`https://countryflagsapi.com/png/${data.sys.country}`);
-    flagy.src=ab.url;
+    flagy.src=`./image/png100px/${data.sys.country}.png`;
+    // let ab=await fetch(`https://countryflagsapi.com/png/${data.sys.country}`);
+    // flagy.src=ab.url;
     weatherType.innerText=data.weather[0].description;
     
     cloudvalue.innerText=data.clouds.all+"%";
@@ -135,19 +136,13 @@ async function searchLocation(cityName){
     wspeed.innerText=(data.wind.speed)+"m/s";
 
     cityinfosearch.innerText=(data.name  );
-    let ab=await fetch(`https://countryflagsapi.com/png/${data.sys.country}`);
-    flag.src=ab.url;
+    flag.src=`./image/png100px/${data.sys.country}.png`;
+
+    // let ab=await fetch(`https://countryflagsapi.com/png/${data.sys.country}`);
+    // flag.src=ab.url;
 
     weatherTypesearch.innerText=data.weather[0].description;
     
     cloudvaluesearch.innerText=data.clouds.all+"%";
     console.log(data.clouds.all);
 }
-
-window.getCurrentPosition=getCurrentPosition;
-window.getLocation=getLocation;
-window.yourlocationdata=yourlocationdata;
-window.yourWeather=yourWeather;
-window.searchWeatherfun=searchWeatherfun;
-window.rest=rest;
-window.searchLocation=searchLocation;

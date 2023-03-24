@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="h-screen  flex-col w-screen p-0 m-0 box-border relative wrapper flex justify-center content-center">
-       <div class="absolute font-semibold text-6xl text-white top-[1%] left-[38%] capitalize">Weather App</div>
-       <div class="mx-[32%] top-[15%] absolute"> 
-            <button onclick="yourWeather()" class="mx-auto my-auto text-4xl border-double border-4 border-indigo-600 rounded-2xl p-2 hover:bg-purple-600 hover:text-green-600">Your Weather</button>
-            <button onclick="searchWeatherfun()" class="mx-auto my-auto text-4xl border-double border-4 border-indigo-600 rounded-2xl p-2 hover:bg-purple-600 hover:text-green-600">Search Weather</button>
+  <div class="h-screen  flex-col w-screen p-0 m-0 box-border relative wrapper flex overflow-x-hidden">
+       <div class="relative font-semibold text-6xl text-white top-[1%] left-[38%] capitalize">Weather App</div>
+       <div class="flex justify-center content-center flex-wrap relative mt-8 gap-8"> 
+            <button onclick="yourWeather()" class=" my-auto text-3xl border-double border-4 border-indigo-600 rounded-2xl p-2 hover:bg-purple-600 hover:text-green-600">Your Weather</button>
+            <button onclick="searchWeatherfun()" class=" my-auto text-3xl border-double border-4 border-indigo-600 rounded-2xl p-2 hover:bg-purple-600 hover:text-green-600">Search Weather</button>
         </div>
             <img id="svgyour" height="300" width="300" class="absolute top-[35%] mx-[35%] flex anti-activate" src="./image/output-onlinegiftools.gif">
 
@@ -20,7 +20,7 @@
                     
                     <div class="city-info flex gap-3 mx-auto my-auto">
                         <p class="cityName-p"></p>
-                        <img src="#" alt="flag" crossorigin="anonymous" class="flag-y">
+                        <img src="#" alt="flag"  class="flag-y">
                     </div>
                     <div class="weather-type mx-auto my-auto"></div>
                     <div class="img"></div>
@@ -40,10 +40,10 @@
                 </div>
             <img id="svgsearch" height="300" width="300" class="anti-activate absolute top-[35%] mx-[35%] flex" src="./image/output-onlinegiftools.gif">
                 
-                <div class="rest relative anti-activate mt-4">
-                    <div class="city-search flex gap-1 content-center justify-center">
+                <div class="rest flex flex-col relative anti-activate mt-4">
+                    <div class="city-search flex gap-4 content-center justify-center">
                         <p class="cityName-para"></p>
-                        <img src="#" alt="flag" crossorigin="anonymous" class="flag">
+                        <img src="#" alt="flag"  class="flag">
                     </div>
                     <div class="weather-type-s text-center capitalize text-2xl my-auto mx-auto"></div>
                     <div class="img"></div>
@@ -70,6 +70,6 @@
         </div>
   </div>
     
-  <script src="script.js" type="module"></script>  
+  <script src="script.js"></script>  
 </body>
 </html>
