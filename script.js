@@ -143,3 +143,11 @@ async function searchLocation(cityName){
     cloudvaluesearch.innerText=data.clouds.all+"%";
     console.log(data.clouds.all);
 }
+
+window.getCurrentPosition=getCurrentPosition;
+window.getLocation=getLocation;
+window.yourlocationdata=yourlocationdata;
+window.yourWeather=yourWeather;
+window.searchWeatherfun=searchWeatherfun;
+window.rest=rest;
+window.searchLocation=searchLocation;
