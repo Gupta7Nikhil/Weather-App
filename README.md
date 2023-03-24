@@ -1,3 +1,5 @@
+Visit Netlify server: https://splendid-starburst-de879c.netlify.app/
+
 "# Weather-App" #API CALL #https://openweathermap.org/ #TailwindCSS #HTML #CSS #JavaScript
 
 
