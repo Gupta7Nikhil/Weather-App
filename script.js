@@ -136,8 +136,8 @@ async function searchLocation(cityName){
     wspeed.innerText=(data.wind.speed)+"m/s";
 
     cityinfosearch.innerText=(data.name  );
-    flag.src=`./image/png100px/${data.sys.country}.png`;
-
+    flag.src=`./image/${data.sys.country}.png`;
+    setTimeout(()=>{},200);
     // let ab=await fetch(`https://countryflagsapi.com/png/${data.sys.country}`);
     // flag.src=ab.url;
 
